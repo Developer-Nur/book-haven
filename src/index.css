@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+
+
+h1, h2, h3, h4{
+    font-family: "Playfair Display", serif;
+    color: rgb(19, 19, 19);
+}
+
+.theme-color{
+    color: rgb(35, 190, 10);
+}
+.theme-bg{
+    background:rgb(35, 190, 10);
+}
+.btn-sec{
+    background: rgb(89, 198, 210);
+}
+
+.menu-text{
+    color: rgba(19, 19, 19, 0.8);
+    font-size: 18px;
+}
+
+.asset-color{
+    color: rgba(19, 19, 19, 0.7);
+}
+
+.prim-title{
+    color: rgb(19, 19, 19);
+}
+.sec-title{
+    color: rgba(19, 19, 19, 0.8);
+}
+.text-color{
+    color: rgb(35, 190, 10);
+}
+.hashtag-bg{
+    background: rgba(35, 190, 10, 0.05);
+}
+.item-bg{
+    background: rgba(19, 19, 19, 0.05);
+}
+
+.border-color{
+    background: #DCDCDC;
+}
+
+nav a:active{
+    border: 1px solid rgb(35, 190, 10);
+    color: rgb(35, 190, 10);
+}

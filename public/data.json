@@ -1,0 +1,126 @@
+
+
+
+
+
+
+[
+  {
+    "bookId": 1,
+    "bookName": "The burden is light",
+    "author": "F. Scott Fitzgerald",
+    "image": "./images/theBurdenIsLight.png",
+    "review": "A timeless classic that delves into the complexities of the American Dream and the emptiness of materialism.",
+    "totalPages": 180,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 2,
+    "bookName": "Your heart is the sea",
+    "author": "George Orwell",
+    "image": "./images/YourHeartIsTheSea.png",
+    "review": "A chilling portrayal of a dystopian society where totalitarianism reigns supreme, and individual freedom is crushed.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 3,
+    "bookName": "Your soul is the river",
+    "author": "Harper Lee",
+    "image": "./images/YourSoulIsTheRiver.png",
+    "review": "A poignant narrative addressing racial injustice, moral growth, and the loss of innocence in the American South.",
+    "totalPages": 281,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Coming-of-age", "Legal Drama"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 4,
+    "bookName": "Field Notes",
+    "author": "J.D. Salinger",
+    "image": "./images/FieldNotes.png",
+    "review": "An insightful exploration of teenage angst, alienation, and the search for authenticity.",
+    "totalPages": 224,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Coming-of-age", "Psychological"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 5,
+    "bookName": "Either write something",
+    "author": "Jane Austen",
+    "image": "./images/EitherWriteSomething.png",
+    "review": "A timeless romance novel that explores themes of class, marriage, and societal expectations.",
+    "totalPages": 279,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Romance", "Satire"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "Milk and honey",
+    "author": "J.R.R. Tolkien",
+    "image": "./images/MilkAndHoney.png",
+    "review": "An epic fantasy saga filled with rich world-building, memorable characters, and themes of friendship and heroism.",
+    "totalPages": 1178,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["High Fantasy", "Adventure"],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 7,
+    "bookName": "Thinking fast and slow",
+    "author": "Fyodor Dostoevsky",
+    "image": "./images/ThinkingFastAndSlow.png",
+    "review": "A psychological thriller exploring the depths of human nature, morality, and the consequences of guilt.",
+    "totalPages": 545,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Psychological", "Philosophical"],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1866
+  },
+  {
+    "bookId": 8,
+    "bookName": "Salt water",
+    "author": "Douglas Adams",
+    "image": "./images/SaltWater.png",
+    "review": "A hilarious and absurdly entertaining science fiction romp across the cosmos, filled with wit and satire.",
+    "totalPages": 193,
+    "rating": 4.5,
+    "category": "Science Fiction",
+    "tags": ["Satire", "Humor"],
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979
+  },
+  {
+    "bookId": 9,
+    "bookName": "A book full of hope",
+    "author": "Mary Shelley",
+    "image": "./images/ABookFullOfHope.png",
+    "review": "A groundbreaking Gothic novel that delves into the ethical implications of scientific exploration and the essence of humanity.",
+    "totalPages": 280,
+    "rating": 4.3,
+    "category": "Gothic Fiction",
+    "tags": ["Horror", "Science Fiction"],
+    "publisher": "Lackington, Hughes, Harding, Mavor, & Jones",
+    "yearOfPublishing": 1818
+  }
+  
+]

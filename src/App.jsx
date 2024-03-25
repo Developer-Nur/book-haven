@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
+import Banner from './cmponents/Banner/Banner'
+import Header from './cmponents/Shared/Header/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Header></Header>
+      <Banner></Banner>
     </>
   )
 }
