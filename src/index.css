@@ -17,7 +17,7 @@ body{
 
 
 h1, h2, h3, h4{
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
     color: rgb(19, 19, 19);
 }
 
@@ -49,8 +49,12 @@ h1, h2, h3, h4{
 .text-color{
     color: rgb(35, 190, 10);
 }
-.hashtag-bg{
+.hashtag{
     background: rgba(35, 190, 10, 0.05);
+    color: rgb(35, 190, 10);
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-weight: 500;
 }
 .item-bg{
     background: rgba(19, 19, 19, 0.05);
@@ -60,7 +64,14 @@ h1, h2, h3, h4{
     background: #DCDCDC;
 }
 
-nav a:active{
-    border: 1px solid rgb(35, 190, 10);
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 8px;
+    border: 1px solid #ffffff00;
+    border-radius: 8px;
+}
+nav a.active{
     color: rgb(35, 190, 10);
+    border: 1px solid rgb(35, 190, 10);
 }

@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
+import '../../../index.css'
 
 
 const Header = () => {
 
     const links = <>
-        <li><NavLink to="/" className="menu-text">Home</NavLink></li>
-        <li><NavLink to="/listedBooks" className="menu-text">Listed Books</NavLink></li>
-        <li><NavLink to="/pagesToRead" className="menu-text">Pages to Read</NavLink></li>
+        <NavLink to="/" className="menu-text">Home</NavLink>
+        <NavLink to="/listedBooks" className="menu-text">Listed Books</NavLink>
+        <NavLink to="/pagesToRead" className="menu-text">Pages to Read</NavLink>
     </>
 
     return (
@@ -25,9 +26,9 @@ const Header = () => {
                 <p className="prim-title text-2xl lg:text-3xl font-bold">Book Haven</p>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <nav className="menu menu-horizontal px-1">
                     {links}
-                </ul>
+                </nav>
             </div>
             <div className="navbar-end space-x-3">
                 <a className="btn theme-bg text-white text-xl font-semibold">Sign In</a>
