@@ -10,8 +10,9 @@ import './index.css'
 import Root from './cmponents/Root/Root';
 import ErrorPage from './cmponents/ErrorPage/ErrorPage';
 import Home from './cmponents/Home/Home';
-import AllBooks from './cmponents/AllBooks/AllBooks';
 import PagesToRead from './cmponents/PagesToRead/PagesToRead';
+import ListBooks from './cmponents/ListBooks/ListBooks';
+import BookDetail from './cmponents/BookDetail/BookDetail';
 
 const router = createBrowserRouter([
   {
@@ -25,11 +26,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/listedBooks",
-        element: <AllBooks></AllBooks>,
+        element: <ListBooks></ListBooks>,
       },
       {
         path: "/pagesToRead",
-        element: <PagesToRead></PagesToRead>
+        element: <PagesToRead></PagesToRead>,
+      },
+      {
+        path: "/bookDetail/:id",
+        element: <BookDetail></BookDetail>,
       }
     ]
   },

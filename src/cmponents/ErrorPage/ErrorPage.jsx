@@ -6,7 +6,7 @@ const ErrorPage = () => {
             <p>404</p>
             <p>Opps!!</p>
             <p>Page note found!!!</p>
-            <button>Go Home</button>
+            <button to="/">Go Home</button>
         </div>
     );
 };
