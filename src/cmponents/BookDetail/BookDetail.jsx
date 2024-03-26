@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useBookData from "../Hook/useBookData";
 import { useParams } from "react-router-dom";
+import { saveLocalStorage } from "../Utilites/localStorage";
 
 
 const BookDetail = () => {
@@ -17,6 +18,10 @@ const BookDetail = () => {
             setSingleData(data)
         }
     }, [books, id]);
+
+    const handleReadingList = () => {
+        saveLocalStorage(singleData)
+    }
 
     return (
         <>
@@ -53,8 +58,8 @@ const BookDetail = () => {
                         <span className="prim-title font-semibold">{rating}</span>
                     </div>
                     <div className="navbar-end space-x-3">
-                        <a className="btn border-2 border-[#DCDCDC] bg-white sec-title text-xl font-semibold">Read</a>
-                        <a className="btn btn-sec text-white text-xl font-semibold">Wishlist</a>
+                        <button onClick={handleReadingList} className="btn border-2 border-[#DCDCDC] bg-white sec-title text-xl font-semibold">Read</button>
+                        <button className="btn btn-sec text-white text-xl font-semibold">Wishlist</button>
                     </div>
                 </div>
             </div>
