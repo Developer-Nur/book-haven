@@ -8,7 +8,7 @@ const useBookData = () => {
 
     useEffect(() => {
         const fetchData = () => {
-            fetch('../../../public/data.json')
+            fetch('/data.json')
                 .then(res => res.json())
                 .then(data => setBooks(data))
                 .catch(error => console.error('Error fetching data:', error)); // Handle errors

@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from "react";
 import useBookData from "../Hook/useBookData";
 import { useParams } from "react-router-dom";
@@ -5,8 +7,11 @@ import { saveLocalStorage, saveWishListLocalStorage } from "../Utilites/localSto
 
 
 const BookDetail = () => {
+
     const [singleData, setSingleData] = useState({});
     const [wishedSingleData, setWishedSingleData] = useState({});
+    const [isInReadingLish, setIsInReadingList] = useState(false);
+    const [isInWishList, setIsInWishList] = useState(false);
     const { id } = useParams();
     const books = useBookData();
 
@@ -18,15 +23,47 @@ const BookDetail = () => {
         if (data) {
             setSingleData(data)
             setWishedSingleData(data)
+
+            const savedbook = JSON.parse(localStorage.getItem('read')) || [];
+            const exsitedbook = savedbook.find(item => item.id == data.id);
+            setIsInReadingList(exsitedbook);
+
+            const savedWishingBook = JSON.parse(localStorage.getItem('wish')) || [];
+            const exsitedWishBook = savedWishingBook.find(item => item.id == data.id);
+            setIsInWishList(exsitedWishBook);
+
+            // if(exsitedbook === exsitedWishBook) {
+            //     console.log("same")
+                
+            // }
         }
     }, [books, id]);
 
+
+
     const handleReadingList = () => {
-        saveLocalStorage(singleData)
+        if (!isInReadingLish) {
+            saveLocalStorage(singleData);
+            setIsInReadingList(true);
+            toast("Book Added to Read List !");
+        } else {
+            toast.warn("Book already exists in Read List !");
+        }
     }
-    
+
+
     const handleWishList = () => {
-        saveWishListLocalStorage(wishedSingleData)
+        if (!isInWishList) {
+            if (!isInReadingLish) {
+                saveWishListLocalStorage(wishedSingleData);
+                setIsInWishList(true);
+                toast("Book Added to Wish List !");
+            } else {
+                toast.warn("Book already exists in Read List!");
+            }
+        } else {
+            toast.warn("Book already exists in Wish List !");
+        }
     }
 
     return (
@@ -68,6 +105,7 @@ const BookDetail = () => {
                         <button onClick={handleWishList} className="btn btn-sec text-white text-xl font-semibold">Wishlist</button>
                     </div>
                 </div>
+                <ToastContainer />
             </div>
         </>
     );
