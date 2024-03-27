@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import useBookData from "../Hook/useBookData";
 import { useParams } from "react-router-dom";
-import { saveLocalStorage } from "../Utilites/localStorage";
+import { saveLocalStorage, saveWishListLocalStorage } from "../Utilites/localStorage";
 
 
 const BookDetail = () => {
     const [singleData, setSingleData] = useState({});
+    const [wishedSingleData, setWishedSingleData] = useState({});
     const { id } = useParams();
     const books = useBookData();
 
@@ -16,11 +17,16 @@ const BookDetail = () => {
         const data = books.find(item => item.id == id);
         if (data) {
             setSingleData(data)
+            setWishedSingleData(data)
         }
     }, [books, id]);
 
     const handleReadingList = () => {
         saveLocalStorage(singleData)
+    }
+    
+    const handleWishList = () => {
+        saveWishListLocalStorage(wishedSingleData)
     }
 
     return (
@@ -59,7 +65,7 @@ const BookDetail = () => {
                     </div>
                     <div className="navbar-end space-x-3">
                         <button onClick={handleReadingList} className="btn border-2 border-[#DCDCDC] bg-white sec-title text-xl font-semibold">Read</button>
-                        <button className="btn btn-sec text-white text-xl font-semibold">Wishlist</button>
+                        <button onClick={handleWishList} className="btn btn-sec text-white text-xl font-semibold">Wishlist</button>
                     </div>
                 </div>
             </div>

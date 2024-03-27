@@ -5,8 +5,8 @@ import { IoMdPeople } from "react-icons/io";
 import { RiPagesLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 
-const ReadingListCard = ({ readingBook }) => {
-    const { id, author, image, category, tags, rating, bookName, yearOfPublishing, publisher, totalPages } = readingBook
+const WishLishCard = ({ wishedbook }) => {
+    const { id, author, image, category, tags, rating, bookName, yearOfPublishing, publisher, totalPages } = wishedbook
     return (
         <div className=" lg:flex justify-start items-start gap-6 rounded-lg border-2 border-[#DCDCDC] p-5 mb-5">
             <div className='border-color p-2 mb-6 lg:w-[230px] rounded-lg'>
@@ -52,8 +52,8 @@ const ReadingListCard = ({ readingBook }) => {
     );
 };
 
-ReadingListCard.propTypes = {
-    readingBook: PropTypes.object.isRequired
+WishLishCard.propTypes = {
+    wishedbook: PropTypes.object.isRequired
 }
 
-export default ReadingListCard;
+export default WishLishCard;
