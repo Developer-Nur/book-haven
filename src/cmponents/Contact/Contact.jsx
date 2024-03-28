@@ -2,6 +2,11 @@ import { FaPhoneVolume } from "react-icons/fa6";
 const Contact = () => {
     return (
         <div>
+
+            <section className="h-[100px]  bg-[#59c6d2] rounded pt-[20px] mb-10">
+                <h3 className="text-[40px] font-bold prim-title text-center">Contact Us</h3>
+            </section>
+
             <h2 className="prim-title text-4xl py-12">Fill out the form to get latest <br></br>news from us</h2>
 
             <div className="lg:flex justify-between items-start gap-5">
@@ -17,7 +22,7 @@ const Contact = () => {
                     <button> <a className="btn btn-sec text-white text-xl font-semibold">Submit</a></button>
                 </div>
                 <div className="lg:w-[45%] text-center flex items-center justify-center mt-10 lg:mt-0 ">
-                    <div className="theme-bg w-full lg:w-[60%] p-12 rounded-lg">
+                    <div className="theme-bg hover:bg-[#59c6d2] w-full lg:w-[60%] p-12 rounded-lg">
                         <h5 className="text-2xl font-semibold text-white mb-2 ">Call us on: </h5>
                         <p className="text-2xl font-semibold text-white flex justify-start items-center gap-2"> <FaPhoneVolume />   +094-6394357</p>
                     </div>

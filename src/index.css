@@ -102,3 +102,7 @@ nav a.active {
     background: #13131308;
     padding: 20px;
 }
+
+.textWhite{
+    color: white !important;
+}

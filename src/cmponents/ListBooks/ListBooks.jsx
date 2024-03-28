@@ -14,7 +14,7 @@ const ListBooks = () => {
 
 
             {/* Dropdown */}
-            <div className="dropdown">
+            <div className="dropdown z-10">
                 <div tabIndex={0} role="button" className="btn m-1 theme-bg text-white text-xl font-semibold">
                     Sort By <AiOutlineDown />
                 </div>

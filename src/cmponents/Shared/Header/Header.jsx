@@ -23,6 +23,8 @@ const Header = () => {
                         <NavLink to="/" className="  text-white font-[500] border-b-2">Home</NavLink>
                         <NavLink to="/listedBooks" className=" text-white font-[500] border-b-2">Listed Books</NavLink>
                         <NavLink to="/pagesToRead" className=" text-white font-[500] border-b-2">Pages to Read</NavLink>
+                        <NavLink to="/about" className="menu-text hover:border-2 hover:border-[#23be0a] border-b-2 textWhite font-[500]">About</NavLink>
+                        <NavLink to="/contact" className="menu-text hover:border-2 hover:border-[#23be0a] border-b-2 textWhite font-[500]">Contact</NavLink>
                     </ul>
                 </div>
                 <p className="prim-title text-2xl lg:text-3xl font-bold">Book Haven</p>

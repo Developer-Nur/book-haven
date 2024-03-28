@@ -14,7 +14,7 @@ import PagesToRead from './cmponents/PagesToRead/PagesToRead';
 import ListBooks from './cmponents/ListBooks/ListBooks';
 import BookDetail from './cmponents/BookDetail/BookDetail';
 import About from './cmponents/About/About';
-import Contact from './cmponents/About/Contact/Contact';
+import Contact from './cmponents/Contact/Contact';
 
 const router = createBrowserRouter([
   {

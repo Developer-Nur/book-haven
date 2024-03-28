@@ -15,10 +15,10 @@ const WishLishCard = ({ wishedbook }) => {
             <div>
                 <h2 className="card-title text-2xl font-bold mb-5">{bookName}!</h2>
                 <p className='font-[500] sec-title mb-2'>By: {author}</p>
-                <div className='flex justify-start items-center gap-4 mt-4'>
-                    <div className=" flex justify-between items-center space-x-2">
+                <div className='lg:flex justify-start items-center gap-4 mt-4'>
+                    <div className=" flex justify-start items-center space-x-2">
                         <p className="font-bold prim-title">Tag</p>
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-start items-center">
                             {tags && tags.map((tag, index) => (
                                 <div key={index}>
                                     <span className="hashtag mr-2">#{tag}</span>
@@ -26,7 +26,7 @@ const WishLishCard = ({ wishedbook }) => {
                             ))}
                         </div>
                     </div>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-start items-center pt-3 lg:pt-0'>
                         <CiLocationOn /><p className='ml-3'>Year of Publishing: {yearOfPublishing}</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const WishLishCard = ({ wishedbook }) => {
                 <div className='flex justify-start items-center gap-6'>
                     <p className='py-1 px-3 rounded-3xl category-bg'>Category: {category}</p>
                     <p className='py-1 px-3 rounded-3xl rating-bg'>Rating: {rating}</p>
-                    <Link to={`/bookDetail/${id}`} ><button className='theme-bg text-white py-1 px-3 rounded-3xl'>View Details</button></Link>
+                    <Link to={`/bookDetail/${id}`} ><button className='theme-bg text-white py-1 px-3 rounded-3xl hover:text-black'>View Details</button></Link>
                 </div>
             </div>
         </div>

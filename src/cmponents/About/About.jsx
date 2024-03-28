@@ -4,6 +4,10 @@ const About = () => {
     return (
         <div className="mt-12">
 
+            <section className="h-[100px] bg-[#59c6d2] rounded pt-[20px] mb-10">
+                <h3 className="text-[40px] font-bold prim-title text-center">About Us</h3>
+            </section>
+
             <div className="grid lg:grid-cols-2 justify-between items-center gap-7">
                 <div>
                     <p>
