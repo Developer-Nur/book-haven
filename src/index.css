@@ -8,79 +8,91 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-  }
+}
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
 }
 
 
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     /* font-family: "Playfair Display", serif; */
     color: rgb(19, 19, 19);
 }
 
-.theme-color{
+.theme-color {
     color: rgb(35, 190, 10);
 }
-.theme-bg{
-    background:rgb(35, 190, 10);
+
+.theme-bg {
+    background: rgb(35, 190, 10);
 }
-.btn-sec{
+
+.btn-sec {
     background: rgb(89, 198, 210);
 }
 
-.menu-text{
+.menu-text {
     color: rgba(19, 19, 19, 0.8);
     font-size: 18px;
 }
 
-.asset-color{
+.asset-color {
     color: rgba(19, 19, 19, 0.7);
 }
 
-.prim-title{
+.prim-title {
     color: rgb(19, 19, 19);
 }
-.sec-title{
+
+.sec-title {
     color: rgba(19, 19, 19, 0.8);
 }
-.text-color{
+
+.text-color {
     color: rgb(35, 190, 10);
 }
-.hashtag{
+
+.hashtag {
     background: rgba(35, 190, 10, 0.05);
     color: rgb(35, 190, 10);
     padding: 5px 10px;
     border-radius: 30px;
     font-weight: 500;
 }
-.item-bg{
+
+.item-bg {
     background: rgba(19, 19, 19, 0.05);
 }
 
-.border-color{
+.border-color {
     background: #DCDCDC;
 }
 
-nav a{
+nav a {
     margin-right: 20px;
     text-decoration: none;
     padding: 10px 8px;
     border: 1px solid #ffffff00;
     border-radius: 8px;
 }
-nav a.active{
+
+nav a.active {
     color: rgb(35, 190, 10);
     border: 1px solid rgb(35, 190, 10);
 }
 
-.rating-bg{
-   background: rgba(255, 173, 51, 0.204);
-   color: #FFAC33;
+.rating-bg {
+    background: rgba(255, 173, 51, 0.204);
+    color: #FFAC33;
 }
-.category-bg{
-   background:  rgba(50, 142, 255, 0.15);
-   color: #328EFF;
+
+.category-bg {
+    background: rgba(50, 142, 255, 0.15);
+    color: #328EFF;
 }
+
