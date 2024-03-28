@@ -18,8 +18,8 @@ const About = () => {
                         Join us in celebrating the magic of books and embark on an unforgettable reading journey with BookHaven – where every page turns into an adventure!
                     </p>
                 </div>
-                <div className="border-l-2 pl-5">
-                    <h3 className="text-center border-b-2 prim-title text-5xl p-4">FAQ</h3>
+                <div className="lg:border-l-2  pl-5">
+                    <h3 className="text-center border-b-2 border-[#23be0a] prim-title text-5xl p-4">FAQ</h3>
                     <div tabIndex={0} className="collapse bg-base-200 mt-5">
                         <div className="collapse-title text-xl font-medium flex justify-between items-center">
                             <span>What payment methods do you accept?</span>
