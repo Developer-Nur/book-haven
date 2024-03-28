@@ -15,7 +15,7 @@ const PagesToRead = () => {
 
 
     return (
-        <div className='mt-10'>
+        <div className='mt-10 bg-[#13131308] p-3 lg:p-10'>
             <ChartData data={readData}> </ChartData>
         </div>
     );

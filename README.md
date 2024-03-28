@@ -1,8 +1,11 @@
-# React + Vite
+Website Title: Book Haven
+This website deployed at: https://book-haven123.surge.sh/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
++ The website's design closely adheres to a provided Figma design, ensuring consistency and visual appeal.
++ A banner section is prominently displayed on the website, featuring a title and a "View The List" button on the left side.
++ Clicking the button directs users to the Listed Books page.
++ Clicking the button directs users to the Listed Books page.
++ Clicking on a book card redirects users to the Book Details page, providing comprehensive information about the selected book.

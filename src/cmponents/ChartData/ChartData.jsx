@@ -20,9 +20,9 @@ const getPath = (x, y, width, height) => {
 const ChartData = ({ data }) => {
 
     return (
-        <div className="chart-container">
+        <div className='chart-container'>
             <BarChart
-                width={1000}
+                width={1200}
                 height={400}
                 data={data}
                 margin={{
