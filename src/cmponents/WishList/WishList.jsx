@@ -8,7 +8,7 @@ const WishList = () => {
     console.log("This is the wish list", wishListBooks)
 
     return (
-        <div>
+        <div className="mt-7">
             {
                 wishListBooks.map((wishedbook,index)=> <WishLishCard key={index} wishedbook={wishedbook}></WishLishCard>)
             }

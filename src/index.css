@@ -77,13 +77,13 @@ nav a {
     margin-right: 20px;
     text-decoration: none;
     padding: 10px 8px;
-    border: 1px solid #ffffff00;
+    border: 2px solid #ffffff00;
     border-radius: 8px;
 }
 
 nav a.active {
-    color: rgb(35, 190, 10);
-    border: 1px solid rgb(35, 190, 10);
+    color: #23be0a;
+    border: 2px solid rgb(35, 190, 10);
 }
 
 .rating-bg {
@@ -97,3 +97,8 @@ nav a.active {
 }
 
 
+.recharts-wrapper{
+    width: 100%;
+    background: #13131308;
+    padding: 20px;
+}

@@ -13,6 +13,8 @@ import Home from './cmponents/Home/Home';
 import PagesToRead from './cmponents/PagesToRead/PagesToRead';
 import ListBooks from './cmponents/ListBooks/ListBooks';
 import BookDetail from './cmponents/BookDetail/BookDetail';
+import About from './cmponents/About/About';
+import Contact from './cmponents/About/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/pagesToRead",
         element: <PagesToRead></PagesToRead>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
       {
         path: "/bookDetail/:id",

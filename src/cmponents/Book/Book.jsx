@@ -11,7 +11,7 @@ const Book = ({ book }) => {
     return (
         <Link to={`/bookDetail/${id}`}>
             <div className=" cursor-pointer card bg-base-100 shadow-xl rounded-lg border-2 border-[#DCDCDC] p-5">
-                <figure className='border-color p-4 mb-6'>
+                <figure className='border-color p-4 mb-6 rounded-md'>
                     <img src={image} alt="Book" />
                 </figure>
                 <div className="card-actions justify-start">

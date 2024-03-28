@@ -5,9 +5,11 @@ import '../../../index.css'
 const Header = () => {
 
     const links = <>
-        <NavLink to="/" className="menu-text">Home</NavLink>
-        <NavLink to="/listedBooks" className="menu-text">Listed Books</NavLink>
-        <NavLink to="/pagesToRead" className="menu-text">Pages to Read</NavLink>
+        <NavLink to="/" className="menu-text hover:border-2 hover:border-[#23be0a]">Home</NavLink>
+        <NavLink to="/listedBooks" className="menu-text hover:border-2 hover:border-[#23be0a]">Listed Books</NavLink>
+        <NavLink to="/pagesToRead" className="menu-text hover:border-2 hover:border-[#23be0a]">Pages to Read</NavLink>
+        <NavLink to="/about" className="menu-text hover:border-2 hover:border-[#23be0a]">About</NavLink>
+        <NavLink to="/contact" className="menu-text hover:border-2 hover:border-[#23be0a]">Contact</NavLink>
     </>
 
     return (
@@ -17,10 +19,10 @@ const Header = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>Listed Books</a></li>
-                        <li><a>Pages to Read</a></li>
+                    <ul tabIndex={0} className="z-50 bg-[#22be0a] text-base menu menu-sm dropdown-content mt-3 p-4  rounded-box w-52 space-y-4">
+                        <NavLink to="/" className="  text-white font-[500] border-b-2">Home</NavLink>
+                        <NavLink to="/listedBooks" className=" text-white font-[500] border-b-2">Listed Books</NavLink>
+                        <NavLink to="/pagesToRead" className=" text-white font-[500] border-b-2">Pages to Read</NavLink>
                     </ul>
                 </div>
                 <p className="prim-title text-2xl lg:text-3xl font-bold">Book Haven</p>
