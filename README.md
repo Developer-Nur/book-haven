@@ -31,7 +31,7 @@ Features:
 + Clicking on a book card redirects users to the Book Details page, providing comprehensive information about the selected book.# book-haven
 
 
-<h3>Installation Instructions for Cloning and Using Book Haven<h3/>
+<h3>Installation Instructions for Cloning and Using Book Haven</h3>
 To clone and run the Book Haven project locally, please follow these steps:
 
 
